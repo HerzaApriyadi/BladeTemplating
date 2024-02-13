@@ -16,7 +16,7 @@ use App\Http\Controllers\HomeController;
 
 Route::get('/', function () {
     return view('public.post.index');
-}); 
+})->name('post.index'); 
 
 
 Route::get('/post', function () {
@@ -26,7 +26,7 @@ Route::get('/post', function () {
 
 Route::get('/post/1/detail', function () {
     return view('public.post.detail');
-});
+})->name('post.detail');
 
 Auth::routes();
 
